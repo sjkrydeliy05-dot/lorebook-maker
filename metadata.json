@@ -1,0 +1,5 @@
+{
+  "name": "Tavo 世界书 JSON 转换器",
+  "description": "一个将虚构城市结构化文本转换为 Tavo 兼容 JSON 文件的工具。它可以解析地区和地点，生成可下载的用于世界构建的 JSON 文件。",
+  "requestFramePermissions": []
+}
