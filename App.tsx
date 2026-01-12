@@ -20,26 +20,26 @@ const FormatGuideModal: React.FC<{ onClose: () => void }> = ({ onClose }) => (
             <h2 id="format-guide-title" className="text-2xl font-bold text-white mb-4">输入格式指南</h2>
             <p className="mb-4">为确保正确解析，请按以下方式构建您的文本：</p>
             <ul className="list-disc list-inside mb-4 space-y-2">
-                <li>使用 <code className="bg-slate-700 px-1 rounded">---</code> 分隔每个主要区域或地区。</li>
-                <li>每个地区的定义以 <code className="bg-slate-700 px-1 rounded">## 地区名称</code> 开头。这将创建一个主类别条目。</li>
-                <li>使用 <code className="bg-slate-700 px-1 rounded">### 地点名称</code> 定义地区内的特定地点。这些将成为与其地区关联的子条目。</li>
+                <li>使用 <code className="bg-slate-700 px-1 rounded">---</code> 分隔大板块（eg：英国区域文本---分割美国区域文本）。</li>
+                <li>每个大板块的标题以 <code className="bg-slate-700 px-1 rounded">## 大板块名称</code> 做母标题。用来制作大板块概述，规则等（eg：## 英国）。</li>
+                <li>使用 <code className="bg-slate-700 px-1 rounded">### 小板块名称</code> 做子标题。用于做子条目（eg：### 伦敦）。</li>
             </ul>
             <p className="font-semibold text-white mb-2">示例：</p>
             <pre className="bg-slate-900 rounded p-4 text-sm whitespace-pre-wrap overflow-x-auto">
                 {`---
-## 擎光区 (大学城与智造)
+## 中国
 *概述：...
-*街道：...
-*该区划地点索引：
-- 临江大学图书馆
+*气候：...
+*索引：
+- 北京
 - ...
 
-### 临江大学图书馆
+### 北京
 *位置：...
 *描述：...
 **交通：...
 
-### 理工大科创楼
+### 上海
 *位置：...
 *描述：...
 `}
